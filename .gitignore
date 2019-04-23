@@ -1,0 +1,14 @@
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Compiled class file
+*.class
+
+
+target/
+surefire-report.html
