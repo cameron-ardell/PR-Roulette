@@ -8,7 +8,19 @@ import org.broadinstitute.ddp.model.Team;
 
 public class RouletteUtil {
 
-    public List<Participant> findReviewers(AreaOfExpertise areaOfExpertise, Team team) {
+    private Team team;
 
+    public RouletteUtil(String teamGuid) {
+        team = TeamUtil.getTeam();
     }
+
+    public List<Participant> findReviewers(AreaOfExpertise areaOfExpertise) {
+
+
+        return null;
+    }
+
+    public
+
+
 }

@@ -7,6 +7,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function2;
+import org.broadinstitute.ddp.util.TeamUtil;
 
 public class PRRoulette {
     public static void main(String[] args) {
@@ -16,5 +17,9 @@ public class PRRoulette {
         JavaRDD<Integer> numbers = sc.parallelize(IntStream.range(0, 5).boxed().collect(Collectors.toList()));
         Integer total = numbers.reduce((Function2<Integer, Integer, Integer>) (v1, v2) -> v1 + v2);
         System.out.println("Total: " + total);
+
+        if (!TeamUtil.isInitialized()) {
+            TeamUtil.init();
+        }
     }
 }

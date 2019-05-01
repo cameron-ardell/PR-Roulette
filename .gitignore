@@ -1,4 +1,39 @@
-# Package Files #
+# macOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# Intellij
+.idea/
+*.iml
+
+# VS Code
+.settings/
+.vscode/
+.classpath
+.factorypath
+.project
+
+# Vim
+.sw[a-p]
+.*.sw[a-p]
+.netrwhist
+
+# Emacs
+*~
+
+# Misc
+*.log
+*.logs
+
+# Package Files
 *.jar
 *.war
 *.ear
@@ -6,9 +41,18 @@
 *.tar.gz
 *.rar
 
+
 # Compiled class file
 *.class
 
 
 target/
 surefire-report.html
+*.xml
+
+# npm
+node_modules/
+
+# maven test results
+surefire-reports/
+checkstyle-result.xml
