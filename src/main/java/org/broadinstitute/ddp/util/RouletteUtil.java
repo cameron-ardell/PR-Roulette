@@ -10,17 +10,15 @@ public class RouletteUtil {
 
     private Team team;
 
-    public RouletteUtil(String teamGuid) {
-        team = TeamUtil.getTeam();
+    public RouletteUtil() throws Exception {
+        team = TeamUtil.getInstance().getTeam();
     }
 
-    public List<Participant> findReviewers(AreaOfExpertise areaOfExpertise) {
+    public static List<Participant> findReviewers(AreaOfExpertise areaOfExpertise) {
 
 
         return null;
     }
-
-    public
 
 
 }
